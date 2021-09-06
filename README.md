@@ -1,2 +1,6 @@
 # JAVA
-记录学习JAVA的基础语法
+# 数据结构
+1. Array
+2. List
+3. 
+4. Queue
