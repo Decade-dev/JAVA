@@ -68,3 +68,26 @@ class Solution {
         return false;
     }
 }
+
+//线性查找
+class Solution {
+    public boolean findNumberIn2DArray(int[][] matrix, int target) {
+        int m = matrix.length;
+        if(m == 0){
+            return false;
+        }
+        int n = matrix[0].length;
+        int i = m - 1;
+        int j = 0;
+        while(i >= 0 && j < n){
+            if(target > matrix[i][j]){
+                j++;
+            }else if(target < matrix[i][j]){
+                i--;
+            }else{
+                return true;
+            }
+        }
+        return false;
+    }
+}
